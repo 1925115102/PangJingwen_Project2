@@ -1,0 +1,97 @@
+@charset "utf-8";
+.background{
+	position: fixed;
+	margin:0;
+	padding:0;
+}
+.huitailang{
+	position:fixed;
+	left:1439px;
+	top:899px;
+	animation: disappear 1s infinite;
+	animation-delay: 1s;
+}
+.ciball{
+	position:fixed;
+	left:430px;
+	top:1133px;
+	animation: ciballo 2s;
+}
+.hand{
+	position:fixed;
+	left:1113px;
+	top:1010px;
+	animation: handle 2s;
+}
+.tree{
+	position:fixed;
+	left:0px;
+	top:0px;
+}
+.up{
+	position:fixed;
+	left:1946px;
+	top:138px;
+	animation: disappear 1s infinite;
+	animation-delay: 1s;
+}
+.down{
+	position:fixed;
+	left:2164px;
+	top:775px;
+}
+.stone{
+	position:fixed;
+	left:1393px;
+	top:0px;
+	animation: disappear 1s;
+}
+.go{
+	position:fixed;
+	left:2042px;
+	top:1524px;
+	animation: disappear 7s;
+}
+.soul{
+	position:fixed;
+	left:1700px;
+	top:891px;
+	opacity: 0;
+	animation: soul 5s;
+	animation-delay: 2s;
+}
+@keyframes handle {
+	0%{
+		left:1113px; top:1010px;
+	}
+	50%{
+		left:1852px; top:652px;
+	}
+	100%{
+		left:1113px; top:1010px;
+	}
+}
+@keyframes ciballo {
+	0%{
+		left:430px; top:1133px;
+	}
+	50%{
+		left:1215px; top:789px;
+	}
+	100%{
+		left:430px; top:1133px;
+	}
+}
+@keyframes disappear {
+	0%{opacity: 0}
+	100%{opacity: 0}
+}
+@keyframes soul {
+	0% {opacity: 1;
+		left:1700px; top:891px;
+	}
+	100%{
+		opacity: 0;
+		left:1700px; top:0px;
+	}
+}

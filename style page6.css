@@ -1,0 +1,41 @@
+@charset "utf-8";
+.background{
+	position: fixed;
+	margin:0;
+	padding:0;
+}
+.ciball{
+	position:fixed;
+	left:308px;
+	top:1013px;
+}
+.hand{
+	position:fixed;
+	left:374px;
+	top:1307px;
+}
+.snake{
+	position:fixed;
+	left:1413px;
+	top:893px;
+	animation: snake 2s infinite;
+}
+.dabaojian{
+	position:fixed;
+	left:264px;
+	top:392px;
+}
+@keyframes snake{
+	0% {
+		left:1413px;
+		top:893px;
+	}
+	50%{
+		left:1313px;
+		top:893px;
+	}
+	100%{
+		left:1413px;
+		top:893px;
+	}
+}

@@ -1,0 +1,31 @@
+@charset "utf-8";
+.background{
+	position:fixed;
+	margin: 0;
+	padding:0;
+}
+.baici{
+	position:fixed;
+	left:1298px;
+	top:916px;
+}
+.heici{
+	position:fixed;
+	left:372px;
+	top:925px;
+	animation: heici 1s infinite;
+}
+@keyframes heici{
+	0%{
+		left:372px;
+		top: 925px;
+	}
+	50%{
+		left:372px;
+		top: 825px;
+	}
+	100%{
+		left:372px;
+		top: 925px;
+	}
+}

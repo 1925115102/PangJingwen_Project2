@@ -1,0 +1,48 @@
+@charset "utf-8";
+.background{
+	position: fixed;
+	margin:0;
+	padding:0;
+}
+.huitailang{
+	position:fixed;
+	left:1439px;
+	top:899px;
+}
+.ciball{
+	position:fixed;
+	left:430px;
+	top:1133px;
+}
+.hand{
+	position:fixed;
+	left:1113px;
+	top:1010px;
+	animation: hand 2s infinite;
+}
+.tree{
+	position:fixed;
+	left:0px;
+	top:0px;
+}
+.up{
+	position:fixed;
+	left:1946px;
+	top:138px;
+}
+.down{
+	position:fixed;
+	left:2164px;
+	top:775px;
+}
+@keyframes hand {
+	0%{
+		left:1113px; top:1010px;
+	}
+	50%{transform: rotate(27.2deg);
+		left:1171px; top:1162px;
+	}
+	100%{
+		left:1113px; top:1010px;
+	}
+}

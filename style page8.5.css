@@ -1,0 +1,108 @@
+@charset "utf-8";
+.background{
+	position: fixed;
+	margin:0;
+	padding:0;
+}
+.huitailang{
+	position:fixed;
+	left:1439px;
+	top:899px;
+	animation: miss 1s;
+	animation-delay: 3s;
+}
+.ciball{
+	position:fixed;
+	left:430px;
+	top:1133px;
+	animation: move 3s;
+}
+.hand{
+	position:fixed;
+	left:1113px;
+	top:1010px;
+	animation: hand 3s;
+}
+.tree{
+	position:fixed;
+	left:0px;
+	top:0px;
+}
+.up{
+	position:fixed;
+	left:1946px;
+	top:138px;
+}
+.down{
+	position:fixed;
+	left:2164px;
+	top:775px;
+}
+.miss{
+	position:fixed;
+	left:1755px;
+	top:769px;
+	opacity: 0;
+	animation: appear 1s;
+	animation-delay: 3s;
+}
+@keyframes move {
+	0%{
+		left:430px;top:1133px;
+	}
+	25%{transform: scale(0.5);
+		left:1400px; top:733px;
+	}
+	50%{transform: scale(0.5);
+		transform: rotate(27.2deg);
+		left:1000px; top:1033px;
+	}
+	75%{transform: scale(0.5);
+		left:1100px; top:733px;
+	}
+	85%{transform: scale(0.5);
+		left:800px; top:733px;}
+	100%{transform: scale(0.5);
+		left:1300px; top:1033px;
+	}
+
+}
+@keyframes hand {
+	0%{
+		left:1130px;top:1133px;
+	}
+	25%{transform: scale(0.5);
+		left:1700px; top:733px;
+	}
+	50%{transform: scale(0.5);
+		transform: rotate(27.2deg);
+		left:1600px; top:1033px;
+	}
+	75%{transform: scale(0.5);
+		left:1500px; top:733px;
+	}
+	85%{transform: rotate(27deg);
+		transform: scale(0.5);
+		left:1400px; top:733px;}
+	100%{transform: scale(0.5);
+		left:1800px; top:1033px;
+	}
+
+}
+@keyframes miss{
+	0%{left:1439px;
+	top:899px;}
+	50%{left:1539px;
+	top:899px;}
+	100%{left:1439px;
+	top:899px;}
+}
+@keyframes appear {
+	0% {
+		opacity: 100;
+	}
+	100% {
+		opacity: 100;
+	}
+	
+}

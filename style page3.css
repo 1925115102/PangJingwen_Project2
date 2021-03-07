@@ -1,0 +1,41 @@
+@charset "utf-8";
+.background{
+	position: fixed;
+	margin:0;
+	padding:0;
+}
+.huitailang{
+	position:fixed;
+	left:989px;
+	top:411px;
+	animation: jump 2s infinite;
+}
+.save{
+	position:fixed;
+	left:2078px;
+	top:1436px;
+	opacity: 0;
+	animation: appear 2s infinite;
+	animation-delay: 3s
+}
+@keyframes jump {
+	0%  {
+		left:949px; top:411px;}
+	25% {transform: rotate(20deg);
+		left:989px; top:300px;	}
+	50% {transform: rotate(-20deg);
+		left:1029px; top:411px;}
+	75% {transform: rotate(20deg);
+		left:989px; top:300px;}
+	100%{
+		left:949px; top:411px;}
+}
+@keyframes appear {
+	0% {
+		opacity: 100;
+	}
+	100% {
+		opacity: 100;
+	}
+	
+}

@@ -1,0 +1,220 @@
+@charset "utf-8";
+img{
+	position:fixed;
+	z-index: 10;
+}
+
+.background{
+	position: fixed;
+	margin:0;
+	padding:0;
+}
+.ciball{
+	position:fixed;
+	left:972px;
+	top:945px;
+	animation: jump 0.5s infinite;
+	
+}
+.lefthand{
+	position:fixed;
+	left:811px;
+	top:1221px;
+	animation: lefthand 0.5s infinite;
+}
+.righthand{
+	position:fixed;
+	left:1605px;
+	top:1218px;
+	animation: righthand 0.5s infinite;
+}
+.shadow{
+	position:fixed;
+	left:1056px;
+	top:1684px;
+	animation: shadow 0.5s infinite;
+}
+.start{
+	position:fixed;
+	left:1014px;
+	top:748px;
+}
+.start:hover {
+	transform:scale(1.25,1.25);
+}
+
+@keyframes shadow{
+	0%  {
+		transform:scale(0.5,0.5);}
+	50%	{
+		transform:scale(1,1);}
+	100%{
+		transform:scale(0.5,0.5);}
+}
+@keyframes lefthand {
+	0%  {
+		left:811px; top:1221px;}
+	50% {
+		transform:rotate(-30deg);
+		left:761px; top:1121px;}
+	100%{
+		left:811px; top:1221px;}
+}
+@keyframes righthand {
+	0%  {
+		left:1605px; top:1218px;}
+	50% {
+		transform:rotate(30deg);
+		left:1705px; top:1118px;}
+	100%{
+		left:1605px; top:1218px;}
+}
+@keyframes jump {
+	0%  {
+		left:972px; top:945px;}
+	50% {
+		left:972px; top:845px;}
+	100%{
+		left:972px; top:945px;}
+}
+.bedroom{
+	position: fixed;
+	margin:0;
+	padding:0;
+}
+.ciballsleep{
+	position:fixed;
+	left:1158px;
+	top:884px;
+	animation: sleep 3s infinite;
+}
+.beizi{
+	position:fixed;
+	left:691px;
+	top:989px;
+}
+.beizi:hover {
+	transform:translate(-228px,84px);
+}
+.sleephand{
+	position:fixed;
+	left:1173px;
+	top:978px;
+}
+.telephone{
+	position:fixed;
+	left:20px;
+	top:956px;
+}
+.clock{
+	position:fixed;
+	left:1155px;
+	top:670px;
+}
+.bubble{
+	position:fixed;
+	left:1296px;
+	top:879px;
+	animation: bubble 3s infinite;
+}
+@keyframes bubble {
+	0%  {left:1296px; top:879px;
+		transform:scale(1,0.9);}
+	50%	{left:1296px; top:829px;
+		transform:scale(1,1.3);}
+	100%{left:1296px; top:879px;
+		transform:scale(1,0.9);}
+}
+@keyframes sleep {
+	0%  {
+		transform:scale(1,0.9);}
+	50%	{
+		transform:scale(1,1);}
+	100%{
+		transform:scale(1,0.9);}
+}
+.ciballwakeup{
+	left:1587px;
+	top:1264px;
+	animation: beng 4s;
+	
+}
+.beizixiankai{
+	left:463px;
+	top:1073px;
+}
+.righthand2{
+	left:1998px;
+	top:1386px;
+	animation: righthand2 4s;
+}
+.lefthand2{
+	left:1448px;
+	top:1371px;
+	animation: lefthand2 4s;
+}
+.talk1{
+	width:9px;
+	height:7px;
+	left:1040px;
+	top:807px;
+	animation: duihua1 7s;
+	animation-delay: 4s;
+}
+.tele{
+	left:10px;
+	top:956px;
+	animation: tele 1s infinite;
+	animation-delay: 5s;}
+
+@keyframes beng {
+	0%  {left:1137px; top:770px;
+	    transform:scale(1,1);}
+	50%	{left:1137px; top:870px;
+		transform:scale(1,0.8);}
+	75%	{left:1454px; top:632px;
+		transform:scale(1,1.1);}
+	95% {left:1587px; top:1264px;
+		transform:scale(1,0.8);}
+	100%{left:1587px; top:1264px;
+		transform:scale(1,1);}
+}
+@keyframes righthand2 {
+	0%  {left:1548px; top:892px;
+	    transform:scale(1,1);
+		transform: rotate(90deg)}
+	50%	{left:1448px; top:992px;
+		transform:scale(1,1);
+		transform: rotate(-60deg)}
+	75%	{left:1865px; top:754px;
+		transform:scale(1,1.1);}
+	95% {left:1998px; top:1386px;
+		transform:scale(1,1);}
+	100%{left:1998px; top:1386px;
+		transform:scale(1,1);}
+}
+@keyframes lefthand2 {
+	0%  {left:998px; top:877px;
+	    transform:scale(1,1);
+		transform: rotate(-90deg)}
+	50%	{left:1098px; top:977px;
+		transform:scale(1,1);
+		transform: rotate(60deg)}
+	75%	{left:1315px; top:739px;
+		transform:scale(1,1.1);}
+	95% {left:1448px; top:1371px;
+		transform:scale(1,1);}
+	100%{left:1448px; top:1371px;
+		transform:scale(1,1);}
+}
+@keyframes duihua1{
+	0%  {transform:scale(1,1);}
+	50% {transform:scale(95,90);}
+	100%{transform:scale(1,1);}
+}
+@keyframes tele {
+	0%  {left:20px; top:956px;}
+	50% {left:50px; top:856px;
+		transform: scale(1.1,1.1)}
+	100%{left:20px; top:956px;}
+}

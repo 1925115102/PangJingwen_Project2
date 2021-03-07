@@ -1,0 +1,82 @@
+@charset "utf-8";
+.background11{
+	position: fixed;
+	margin:0;
+	padding:0;
+}
+.ciball{
+	position:fixed;
+	left:386px;
+	top:1282px;
+
+}
+.land{
+	position:fixed;
+	left:0px;
+	top:1438px;
+}
+.sun{
+	position:fixed;
+	left:2020px;
+	top:109px;
+	animation: sun 3s infinite;
+}
+.cloud{
+	position:fixed;
+	left:1317px;
+	top:337px;
+}
+.water{
+	position:fixed;
+	left:1255px;
+	top:1528px;
+}
+.go{
+	position:fixed;
+	left:2249px;
+	top:1246px;
+}
+.bad{
+	position:fixed;
+	left:601px;
+	top:278px;
+
+}
+@keyframes sun {
+	0%  {
+		transform: rotate(60deg);
+	}
+	50% {
+		transform: rotate(-60deg);
+	}
+	100% {
+		transform: rotate(60deg);	
+	}
+}
+@keyframes run {
+	0% {transform:scale(1,1);
+		left:386px; top:1282px
+	}
+	28%{transform:scale(1,0.9);
+		left:386px; top:1282px;
+	}
+	37%{transform:scale(1,1.1);
+		left:631px; top:1082px;
+	}
+	46%{transform:scale(1,0.9);
+		left:875px; top:1282px;
+	}
+	55%{transform:scale(1,1.1);
+		left:1120px; top:1082px;
+	}
+	64%{transform:scale(1,0.9);
+		left:1364px; top:1282px;
+	}
+	100%{transform:scale(1,0.9);
+		left:1364px; top:1582px;
+	}
+}
+@keyframes disappear {
+	0%{opacity: 0}
+	100%{opacity: 0}
+}

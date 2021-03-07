@@ -1,0 +1,100 @@
+@charset "utf-8";
+.background{
+	position: fixed;
+	margin:0;
+	padding:0;
+}
+.ciball{
+	position:fixed;
+	left:308px;
+	top:1013px;
+	animation: ciball 2s;
+	animation-delay: 1s;
+}
+.hand{
+	position:fixed;
+	left:374px;
+	top:1307px;
+	animation: hand 2s;
+	animation-delay: 1s;
+}
+.snake{
+	position:fixed;
+	left:1413px;
+	top:893px;
+	opacity: 0;
+	animation: tao 6s;
+}
+.dabaojian{
+	position:fixed;
+	left:541px;
+	top:1123px;
+	animation: baojian 3s;
+}
+.go{
+	position:fixed;
+	left:2181px;
+	top:1350px;
+	opacity: 0;
+	animation: appear 1s infinite;
+	animation-delay: 6s;
+}
+@keyframes ciball{
+	0%{ transform: scale(1,0.9);
+		left:308px; top:1013px;
+	}
+	50%{
+		left:218px; top:682px;
+	}
+	100%{
+		left:308px; top:1013px
+	}
+}
+@keyframes hand{
+	0%{
+		left:374px; top:1307px;
+	}
+	50%{transform: rotate(-110deg);
+		left:158px; top:651px;
+	}
+	100%{
+		left:374px; top:1307px
+	}
+}
+@keyframes baojian{
+	0% {
+		left:264px; top:392px;
+	}
+	67%{
+		left:264px; top:392px;
+	}
+	100%{
+		left:541px; top:1123px;
+	}
+}
+@keyframes tao {
+	0% {opacity:1;
+		left:1413px; top:893px;
+	}
+	75%{opacity:1;
+		transform:rotateY(0deg);
+		left:1413px; top:893px;
+	}
+	80%{opacity:1;
+		transform:rotateY(180deg);
+		left:1613px; top:893px;}
+	100%{opacity:0;
+		transform:rotateY(180deg);
+		left:1613px; top:893px;
+		
+	}
+}
+@keyframes appear {
+	0% {
+		opacity: 100;
+	}
+	100% {
+		opacity: 100;
+	}
+	
+}
